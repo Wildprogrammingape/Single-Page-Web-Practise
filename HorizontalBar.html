@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color: #333;
+
+    overflow: hidden;
+    /* 防止list元素跑出框架外
+    overflow:hidden is added to the ul element to prevent 
+    li elements from going outside of the list */
+}
+/* 方法一：列表inline内联 */
+
+/* li{
+    display: inline;
+} */
+
+/* 方法二：浮动菜单 Float */
+
+/* 将link视为block块元素，列表左浮动显示: */
+
+li{
+    /* 使block element 滑动到一起 
+    use float to get block elements to slide next to each other*/
+
+    float: left;
+}
+li a{
+    /* Allows us to specify padding (and height, width, margins, etc. if you want)
+    变成块元素，才可以填充，加边距，设置高度宽度等操作 */
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover{
+    /* color: red; */
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+    <li><a href="#home">Home</a></li>   
+    <li><a href="#abount">About</a></li>  
+    <li><a href="#Contact">Contact</a></li>  
+    <li><a href="#Resume">Resume</a></li>  
+
+</ul> 
+
+</body>
+</html>
